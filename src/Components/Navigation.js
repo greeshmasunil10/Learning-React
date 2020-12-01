@@ -42,7 +42,7 @@ function Navigation(){
                         <animated.div 
                         key={key} 
                         style={props}
-                        className="fixed bg-white top-0 left-0 w-4/5 h-full z-50 shadow"
+                        className="fixed bg-white top-0 left-0 w-3/5 h-full z-50 shadow"
                         >
                                 Menu
                         </animated.div>
