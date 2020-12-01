@@ -1,19 +1,17 @@
 import React, { useState } from 'react'
 import Navigation from './Navigation'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+
     
 
 function Header(){
 
     return(
         <div>
-                <header className=" border-b bg-gray-100 font-bold text-xl p-3 flex justify-between text-center">
-                    <span className="font-bold">
-                         Website Name
+                <header className=" border-b bg-gray-100 text-xl p-3 flex justify-between">
+                    <span className="font-bold text-xl text-gray-600">
+                         Mississauga
                     </span>
                     <Navigation />
-                    
                 </header>
                 
         </div>
