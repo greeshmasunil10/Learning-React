@@ -10,25 +10,28 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import AboutUs from './View/AboutUs';
 import Home from './View/Home';
+import Product from './View/Product';
 
 
 function App() {
 
   return (
     <div>
-
       {/* <HelloWorld name="User" /> */}
       <Router>
       <Header />
           <div className="p-3">
-            <switch>
+            <Switch>
               <Route exact path="/">
                   <Home />
               </Route>
               <Route path="/about">
                   <AboutUs />
               </Route>
-            </switch>
+              <Route path="/products/:id">
+                  <Product />
+              </Route>
+            </Switch>
           </div>
 
       <Footer />
