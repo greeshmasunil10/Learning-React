@@ -10,8 +10,8 @@ function Header(){
 
     return(
         <div>
-                <header className=" border-b bg-gray-100 text-xl p-5 flex justify-between">
-                    <span className="font-bold text-xl text-gray-600">
+                <header className=" border-b bg-gray-200 text-xl p-5 flex justify-between ">
+                    <span className="font-bold text-xl text-gray-600 ">
                     <Link to="/">
                          My Toy Store <FontAwesomeIcon 
                             icon={faGamepad} 

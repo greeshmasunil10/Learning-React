@@ -22,7 +22,7 @@ function Product(){
     if(product.data){
         return(
             content= 
-                    <span>
+                    <span >
                         <h1 className="text-2xl font-bold mb-3">
                             {product.data.name}
                         </h1>
@@ -34,8 +34,8 @@ function Product(){
                                 />
                         </div>
 
-                        <div className="text-2xl font-bold mb-3">
-                            {product.data.price} CAD.
+                        <div className="text-xl text-gray-500 font-bold mb-3">
+                        Price: <t className="font-bold text-gray-600">${product.data.price}</t>
                         </div>
 
                         <div>
