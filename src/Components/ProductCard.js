@@ -13,7 +13,7 @@ function ProductCard(props){
                 >
                 </div>
             </Link>
-            <div className="static ml-3">
+            <div className="static ml-3 p-2">
                 <div className="font-bold text-l mb-3">
                     <Link to={`/products/${props.product.id}`}> 
                         {props.product.name}
