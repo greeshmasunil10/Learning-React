@@ -5,37 +5,67 @@ import { useParams } from 'react-router-dom'
 function Product(){
     const { id } = useParams()
     const url =`http://localhost:5000/api/courses/${id}`
-    const [product,setProduct] = useState(null)
+    const [product,setProduct] = useState({
+        loading:false,
+        data:null,
+        error: false
+    })
+
     let content = null
 
     useEffect(() =>{
+        setProduct({
+            loading: true,
+            data: null,
+            error: false
+        })
         axios.get(url)
             .then(response => {
-                setProduct(response.data)
+                setProduct({
+                    loading:false,
+                    data: response.data,
+                    error: false
+                })
+            }).catch( () => {
+                setProduct({
+                    loading:false,
+                    data: null,
+                    error: true
+                })
             })
     }, [url])
-    
-    if(product){
+
+    if(product.loading){
+        content = <div className="flex justify-center ">
+                        <div className="loader" ></div>
+                    </div>
+    }
+    if(product.error){
+        content = <div className="flex justify-center ">
+                        <div className="text-red-300" >An error occured</div>
+                    </div>
+    }
+    if(product.data){
         return(
             content= 
                     <span>
                         <h1 className="text-2xl font-bold mb-3">
-                            {product.name}
+                            {product.data.name}
                         </h1>
 
                         <div> 
-                            <img src={product.imageUrl}
+                            <img src={product.data.imageUrl}
                                     alt={product.name}
                                     width="400" height="400"
                                 />
                         </div>
 
                         <div className="text-2xl font-bold mb-3">
-                            {product.price} CAD.
+                            {product.data.price} CAD.
                         </div>
 
                         <div>
-                            {product.description}
+                            {product.data.description}
                         </div>
                     </span> 
         )
@@ -47,22 +77,5 @@ function Product(){
         )
 
 }
-// {/* <div>
-//     <h1 className="text-2xl font-bold mb-3">
-//         {product.name}
-//     </h1>
-//     <div>
-//         <img src={product.images[0].imageUrl}
-//             alt={product.name}
-//         />
-//     </div>
-//     <div className="text-2xl font-bold mb-3">
-//         {product.price} CAD.
-//     </div>
-//     <div>
-//         {product.description}
-//     </div>
-// </div> */}
-
 export default Product
 
