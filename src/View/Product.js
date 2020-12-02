@@ -1,39 +1,13 @@
 import React, {useState,  useEffect } from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import { useAxiosGet } from '../Hooks/HttpRequest';
 
 function Product(){
     const { id } = useParams()
     const url =`http://localhost:5000/api/courses/${id}`
-    const [product,setProduct] = useState({
-        loading:false,
-        data:null,
-        error: false
-    })
-
-    let content = null
-
-    useEffect(() =>{
-        setProduct({
-            loading: true,
-            data: null,
-            error: false
-        })
-        axios.get(url)
-            .then(response => {
-                setProduct({
-                    loading:false,
-                    data: response.data,
-                    error: false
-                })
-            }).catch( () => {
-                setProduct({
-                    loading:false,
-                    data: null,
-                    error: true
-                })
-            })
-    }, [url])
+     let content = null
+     let product = useAxiosGet(url)
 
     if(product.loading){
         content = <div className="flex justify-center ">
