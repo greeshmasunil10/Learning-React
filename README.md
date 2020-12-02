@@ -1,10 +1,17 @@
-# Getting Started with Create React App
+# E-commerce Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Libraries and Components Used
 
-In the project directory, you can run:
+* tailwindcss
+* postcss-cli
+* autoprefixer
+* react-spring
+* react-axios
+* react-router-dom
+* react-fontawesome
+* react-hooks/useState
 
 ### `yarn start`
 
