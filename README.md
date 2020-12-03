@@ -13,6 +13,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * react-fontawesome
 * react-hooks/useState
 
+## Screenshots
+![](capture1.png)
+![](Capture2.png)
+![](Capture3.png)
+![](Capture4.png)
+
 ### `yarn start`
 
 Runs the app in the development mode.\
