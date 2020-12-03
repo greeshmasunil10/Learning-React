@@ -14,10 +14,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * react-hooks/useState
 
 ## Screenshots
-![](capture1.png)
-![](Capture2.png)
-![](Capture3.png)
-![](Capture4.png)
+![](screenshots/capture1.png)
+![](screenshots/Capture2.png)
+![](screenshots/Capture3.png)
+![](screenshots/Capture4.png)
 
 ### `yarn start`
 
