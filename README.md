@@ -14,10 +14,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * react-hooks/useState
 
 ## Screenshots
-![](screenshots/capture1.png)
-![](screenshots/Capture2.png)
-![](screenshots/Capture3.png)
-![](screenshots/Capture4.png)
+![](screenshots/Capture2.PNG)
+![](screenshots/Capture4.PNG)
+![](screenshots/Capture3.PNG)
+![](screenshots/capture1.PNG)
+
+## API
+https://productinfonodejs.herokuapp.com/api/products
 
 ### `yarn start`
 
