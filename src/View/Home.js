@@ -7,7 +7,7 @@ import { useAxiosGet } from '../Hooks/HttpRequest';
 function Home(){
     let content = null
     const { id } = useParams()
-    const url =`http://localhost:5000/api/courses?page=1&limit=2`
+    const url =`https://productinfonodejs.herokuapp.com/api/products`
     let products = useAxiosGet(url)
 
     if(products.loading){
@@ -30,11 +30,11 @@ function Home(){
 
     return(
         <div className="container mx-auto">
-           <div className="ml-28">
-                <h1 className="font-bold text-xl mb-3 text-red-500">Black Friday Sale</h1>
+           <div className="lg:ml-28">
+                <h1 className="font-bold text-xl lg:mb-3 text-red-500">Black Friday Sale</h1>
                 <header className="font-bold p-4 text-l">Shop now!</header>
            </div>
-            <div className="ml-24 mr-24 grid md:grid-cols-4 grid-cols-1 items-stretch">
+            <div className="lg:ml-24 lg:mr-24 grid md:grid-cols-4 grid-cols-1 items-stretch">
                 {content}
             </div>
         </div>

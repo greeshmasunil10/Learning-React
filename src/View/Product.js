@@ -5,7 +5,7 @@ import { useAxiosGet } from '../Hooks/HttpRequest';
 
 function Product(){
     const { id } = useParams()
-    const url =`http://localhost:5000/api/courses/${id}`
+    const url =`https://productinfonodejs.herokuapp.com/api/products/${id}`
      let content = null
      let product = useAxiosGet(url)
 
