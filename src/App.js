@@ -12,8 +12,6 @@ import AboutUs from './View/AboutUs';
 import Home from './View/Home';
 import Product from './View/Product';
 
-
-
 function App() {
   // const url = ""
   // const url = "https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm21-background-tong-058.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=710a6fed5b1923da8d5f95191839ef8a"
@@ -51,5 +49,4 @@ function App() {
     // </div>
   );
 }
-
 export default App;

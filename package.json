@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^12.1.10",
     "autoprefixer": "^10.0.4",
     "axios": "^0.21.0",
+    "cors": "^2.8.5",
     "postcss": "^8.1.10",
     "postcss-cli": "^8.3.0",
     "react": "^17.0.1",
@@ -46,5 +47,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://productinfonodejs.herokuapp.com/"
 }

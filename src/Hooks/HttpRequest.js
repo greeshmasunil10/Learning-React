@@ -13,7 +13,7 @@ export function useAxiosGet(url){
             data: null,
             error: false
         })
-        axios.get(url)
+        axios.get(url,{ crossdomain: true })
             .then(response => {
                 setRequest({
                     loading:false,
